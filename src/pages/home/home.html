@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-navbar color="dark">
+    <ion-title>Task List</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="add()"><ion-icon name="add-circle"></ion-icon></button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+
+<ion-content padding>
+    <ion-list>
+      <ion-item>
+        <ion-label>Attend forum
+            <p ion-text color="danger">9:00am, August 30, 2018</p>
+            <p ion-text color="danger">Location: ICT-AVR, USTP</p>
+        </ion-label>
+        <ion-checkbox color="secondary"></ion-checkbox>
+      </ion-item>
+      <ion-item>
+        <ion-label>Participate Activities
+            <p ion-text color="danger">8;30am, September 3, 2018</p>
+            <p ion-text color="danger">Location: USTP Campus</p>
+        </ion-label>
+        <ion-checkbox color="secondary" checked="true"></ion-checkbox>
+      </ion-item>
+    </ion-list>
+
+
+  <button ion-button block color="default" (click)="fortoday()">For Today</button>
+  <button ion-button block color="default" (click)="assignments()">Assignments</button>
+  <button ion-button block color="default" (click)="thesis()">Thesis Deadlines</button>
+  <button ion-button block color="default" (click)="requirements()">School Requirements</button>
+  <button ion-button block color="default" (click)="groceries()">Groceries</button>
+  <button ion-button block color="default" (click)="bucketlist()">Bucketlist</button>
+</ion-content>
+
+<!-- <ion-content padding>
+  <button ion-button color="light" block (click)="doPrompt()">Show Prompt Alert</button>
+</ion-content> -->
+
+
+
+
+
